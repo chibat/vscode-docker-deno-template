@@ -66,7 +66,7 @@ ENV DEBIAN_FRONTEND=dialog
 ENTRYPOINT [ "/usr/local/share/docker-init.sh" ]
 CMD [ "sleep", "infinity" ]
 
-ENV DENO_DIR=/workspace/.deno
+ENV DENO_DIR=/workspaces/deno-app/.deno
 ENV DENO_INSTALL=/usr/local
 
 RUN curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.0.3
